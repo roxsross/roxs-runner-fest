@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#090914" />
+  <meta name="description" content="ROXS RUNNER: Deploy or Die! Un arcade DevOps de ROXSFEST 2026." />
+  <title>ROXS RUNNER · Deploy or Die!</title>
+  <link rel="stylesheet" href="./style.css" />
+  <script src="./game.js" defer></script>
+</head>
+<body>
+  <main class="page">
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark">🔥</span><span>ROXS<span class="pink">FEST</span><small>2026 · ARCADE</small></span></div>
+      <a class="event-link" href="https://roxsfest.com" target="_blank" rel="noopener noreferrer">VISITAR ROXSFEST ↗</a>
+    </header>
+
+    <section class="game-shell" aria-label="ROXS RUNNER">
+      <div class="titlebar"><div><span class="eyebrow">BUILD WITH FIRE. DEPLOY WITH POWER.</span><h1>ROXS <span>RUNNER</span><b>_</b></h1><p>DEPLOY OR DIE! <span class="flash">● LIVE ARCADE</span></p></div><div class="title-icon">&lt;/&gt;</div></div>
+      <div class="hud" aria-live="off">
+        <div class="stat"><small>SCORE</small><strong id="score">000000</strong></div>
+        <div class="stat"><small>BEST</small><strong id="best">000000</strong></div>
+        <div class="stat"><small>DEPLOYS</small><strong id="deploys">00</strong></div>
+        <div class="stat level-stat"><small>LEVEL</small><strong id="level">EASY</strong></div>
+        <div class="hud-actions"><button id="pauseBtn" class="icon-btn" aria-label="Pausar juego" title="Pausar (P)" disabled>Ⅱ</button><button id="soundBtn" class="icon-btn" aria-label="Activar sonido" title="Activar sonido">🔇</button></div>
+      </div>
+
+      <div class="stage" id="stage">
+        <canvas id="game" width="960" height="420" aria-label="Roxs corre y salta obstáculos DevOps"></canvas>
+        <div id="message" class="milestone" aria-live="polite"></div>
+        <div class="overlay" id="overlay">
+          <div class="panel" id="panel">
+            <div class="panel-tag">★ ROXSFEST 2026 ★</div>
+            <div class="panel-avatar"><img src="./roxsfest.png" alt="Roxs en pixel art" /></div>
+            <h2 id="panelTitle">READY TO <em>DEPLOY?</em></h2>
+            <p id="panelDesc">¡Ayudá a Roxs a llegar a producción sin romper el pipeline!</p>
+            <div class="panel-controls" id="panelControls"><span>⌨ ESPACIO / ↑ para saltar</span><span>☝ TOCÁ para saltar</span></div>
+            <div class="panel-results hidden" id="panelResults"></div>
+            <button id="primaryBtn" class="primary-btn">🚀 START DEPLOY</button>
+            <span class="panel-hint" id="panelHint">EVITÁ LOS BUGS · RECOLECTÁ TECNOLOGÍAS</span>
+          </div>
+        </div>
+      </div>
+      <div class="touchbar"><button id="jumpBtn" class="jump-btn" aria-label="Saltar">↑ SALTAR</button><span>BUGS, ALERTAS Y PIPELINES ROTOS... ¡ESQUIVALOS!</span></div>
+    </section>
+    <footer><span>MADE WITH <span class="pink">♥ & 🔥</span> BY ROXS</span><span>ROXSFEST 2026 · <a href="https://roxsfest.com" target="_blank" rel="noopener noreferrer">roxs<strong>fest</strong>.com</a></span></footer>
+  </main>
+</body>
+</html>
