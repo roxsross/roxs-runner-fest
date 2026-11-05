@@ -6,7 +6,7 @@
 
 Creado para **[ROXSFEST 2026](https://roxsfest.com)** · *Build with Fire. Deploy with Power.*
 
-**HTML5 · CSS3 · JavaScript Vanilla · Sin dependencias**
+**HTML5 · CSS3 · Js**
 
 </div>
 
@@ -21,8 +21,8 @@ Es un minijuego arcade para jugar desde una computadora o un celular. El persona
 Cloná el repositorio de GitHub:
 
 ```bash
-git clone https://github.com/TU-USUARIO/roxs-runner.git
-cd roxs-runner
+git clone https://github.com/roxsross/roxs-runner-fest.git
+cd roxs-runner-fest
 ```
 
 Abrí `index.html` en Chrome, Firefox, Safari o Edge. Reemplazá `TU-USUARIO` por el usuario o la organización donde publiques el repositorio.
